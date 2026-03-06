@@ -351,7 +351,8 @@ ai:
   # 完整列表: https://docs.litellm.ai/docs/providers
   # 如果你对于看英文文档比较头疼，那么可以点击页面右下角的 【Ask AI】 ,用中文询问怎么配置 
   
-  model: "/root/.cache/modelscope/hub/models/okwinds/Qwen3-30B-A3B-Instruct-2507-Int4-W4A16"
+  # 使用 api_base 时需加 openai/ 前缀，路径为 vLLM 服务端要求的 model 值
+  model: "openai//root/.cache/modelscope/hub/models/okwinds/Qwen3-30B-A3B-Instruct-2507-Int4-W4A16"
 
   api_key: "123"                       # API Key（建议使用环境变量 AI_API_KEY）
   
